@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo | Juu&#39;s</title>
+    <link>http://localhost:1313/tag/hugo/</link>
+      <atom:link href="http://localhost:1313/tag/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hugo</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 04 Apr 2024 21:48:44 +0800</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png</url>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tag/hugo/</link>
+    </image>
+    
+    <item>
+      <title>Personal Web Using Hugo</title>
+      <link>http://localhost:1313/post/usinghugo/usinghugo/</link>
+      <pubDate>Thu, 04 Apr 2024 21:48:44 +0800</pubDate>
+      <guid>http://localhost:1313/post/usinghugo/usinghugo/</guid>
+      <description>&lt;p&gt;Hugo is a framework to generate statics website, and Github is to publish the website. This article demonstrates using Hugo and GitHub to setup a personal website. It’s easy to maintain and clear to read.&lt;/p&gt;
+&lt;h2 id=&#34;preparing&#34;&gt;Preparing&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-repository-on-github&#34;&gt;Create a repository on GitHub&lt;/h3&gt;
+&lt;p&gt;We can upload our website to various servers though, I use GitHub to hold my personal website since it’s free. Creating a repository for personal website is slightly different from normal repository. The name for a personal website’s repository should be the same with your github name, and every one can have only one such repository. Building detail can be found on GitHub website.&lt;/p&gt;
+&lt;h3 id=&#34;installing-hugo&#34;&gt;Installing Hugo&lt;/h3&gt;
+&lt;p&gt;Installing Hugo is very easy on Windows platform. All you have to do is download a binary .exe file and add the file path to system variable. Installation detail can be found on hugo official website.&lt;/p&gt;
+&lt;h3 id=&#34;choosing-a-hugo-theme&#34;&gt;Choosing a Hugo theme&lt;/h3&gt;
+&lt;p&gt;Upon finishing install hugo, you can chooses a theme to generate your website. The theme market can be found here. And installing process usually listed in the introduction part of the theme.&lt;/p&gt;
+&lt;h3 id=&#34;compile-and-preview&#34;&gt;Compile and preview&lt;/h3&gt;
+&lt;p&gt;Follow the theme introduction to config your website, you should already preview your website on your computer. The next step is to publish the site to GitHub. Before doing that, here are some tips:&lt;/p&gt;
+&lt;p&gt;Preview your website using command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Generate the website file using:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The website file will be generated in &lt;code&gt;\public&lt;/code&gt; by default. For convenient, you can change it to other path by adding following line to config.yaml or hugo.toml file under hugo root space.&lt;/p&gt;
+&lt;p&gt;Adding to config.yaml file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;publishDir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;your path&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;pushing-the-website-to-github&#34;&gt;Pushing the website to GitHub&lt;/h3&gt;
+&lt;p&gt;Using git or other GUI app, publishing the website file to repository you created.&lt;/p&gt;
+&lt;h2 id=&#34;posting-the-blog&#34;&gt;Posting the blog&lt;/h2&gt;
+&lt;p&gt;Posting blogs to our website needs three steps: creating, compiling and publishing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating: creating a .md file and write some content on your computer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Creating steps using following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new [your_post_path\your_file.md]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;for example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new .\content\post\UsingHugo\using_hugo.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;the above command is that I used to write this blog.&lt;/p&gt;
+&lt;p&gt;Then using yor editor to write contents on the .md file. Yo can also preview the file using &lt;code&gt;hugo server&lt;/code&gt; command.&lt;/p&gt;
+&lt;p&gt;Attention that you have to set “draft” at the top of your .md file to false. Otherwise, You will not be able to preview the blog.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compiling: compile the web file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Noting that all you have done is on your computer. You have to compile the website for publishing. Compiling the website using &lt;code&gt;hugo&lt;/code&gt; command.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Publishing: publishing the website to Github&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using your way to publish the website to GitHub, then everyone can see your web.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

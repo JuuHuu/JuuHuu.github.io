@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FAIMS | Juu&#39;s</title>
+    <link>http://localhost:1313/tag/faims/</link>
+      <atom:link href="http://localhost:1313/tag/faims/index.xml" rel="self" type="application/rss+xml" />
+    <description>FAIMS</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png</url>
+      <title>FAIMS</title>
+      <link>http://localhost:1313/tag/faims/</link>
+    </image>
+    
+    <item>
+      <title>Rapid method for accurate peak position extraction in high-field asymmetric ion mobility spectrometry</title>
+      <link>http://localhost:1313/publication/faims_peak/peak/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/faims_peak/peak/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
