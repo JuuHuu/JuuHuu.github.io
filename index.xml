@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Juu&#39;s</title>
-    <link>http://localhost:1313/</link>
-      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://juuhuu.github.io/</link>
+      <atom:link href="https://juuhuu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Juu&#39;s</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png</url>
+      <url>https://juuhuu.github.io/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png</url>
       <title>Juu&#39;s</title>
-      <link>http://localhost:1313/</link>
+      <link>https://juuhuu.github.io/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/event/example/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/content/event/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/event/example/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/event/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -34,17 +34,17 @@
     
     <item>
       <title>Theoretical and Experimental Study on the Effect of Scanning Speed on Faims Peaks</title>
-      <link>http://localhost:1313/publication/theoretical_and/thero/</link>
+      <link>https://juuhuu.github.io/publication/theoretical_and/thero/</link>
       <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/theoretical_and/thero/</guid>
+      <guid>https://juuhuu.github.io/publication/theoretical_and/thero/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Personal Web Using Hugo</title>
-      <link>http://localhost:1313/post/usinghugo/usinghugo/</link>
+      <link>https://juuhuu.github.io/post/usinghugo/usinghugo/</link>
       <pubDate>Thu, 04 Apr 2024 21:48:44 +0800</pubDate>
-      <guid>http://localhost:1313/post/usinghugo/usinghugo/</guid>
+      <guid>https://juuhuu.github.io/post/usinghugo/usinghugo/</guid>
       <description>&lt;p&gt;Hugo is a framework to generate statics website, and Github is to publish the website. This article demonstrates using Hugo and GitHub to setup a personal website. It’s easy to maintain and clear to read.&lt;/p&gt;
 &lt;h2 id=&#34;preparing&#34;&gt;Preparing&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-repository-on-github&#34;&gt;Create a repository on GitHub&lt;/h3&gt;
@@ -89,9 +89,9 @@
     
     <item>
       <title>Blog with Jupyter Notebooks!</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/post/blog-with-jupyter/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/content/post/blog-with-jupyter/</link>
       <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/post/blog-with-jupyter/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/post/blog-with-jupyter/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;IPython.core.display&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -116,7 +116,7 @@
                /theme-academic-cv-main/content/post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_5a714abab5f53c70f7c38e19755638d3.webp 400w,
                /theme-academic-cv-main/content/post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_6b76da17c04a40aee4c1c633206f8065.webp 760w,
                /theme-academic-cv-main/content/post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/theme-academic-cv-main/content/post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_5a714abab5f53c70f7c38e19755638d3.webp&#34;
+               src=&#34;https://juuhuu.github.io/theme-academic-cv-main/content/post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_5a714abab5f53c70f7c38e19755638d3.webp&#34;
                width=&#34;601&#34;
                height=&#34;203&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -136,17 +136,17 @@
     
     <item>
       <title>Rapid method for accurate peak position extraction in high-field asymmetric ion mobility spectrometry</title>
-      <link>http://localhost:1313/publication/faims_peak/peak/</link>
+      <link>https://juuhuu.github.io/publication/faims_peak/peak/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/faims_peak/peak/</guid>
+      <guid>https://juuhuu.github.io/publication/faims_peak/peak/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Welcome to Hugo Blox Builder, the website builder for Hugo</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/post/getting-started/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/content/post/getting-started/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/post/getting-started/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/post/getting-started/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;libr&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
@@ -224,9 +224,9 @@
     
     <item>
       <title>Writing technical content in Markdown</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/post/writing-technical-content/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/content/post/writing-technical-content/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/post/writing-technical-content/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/post/writing-technical-content/</guid>
       <description>&lt;p&gt;Hugo Blox Builder is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Wowchemy.&lt;/p&gt;
@@ -326,7 +326,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-194526783&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-416793852&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -336,7 +336,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-194526783&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-416793852&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -618,9 +618,9 @@ Crash --&gt; [*]
     
     <item>
       <title>An example preprint / working paper</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/publication/preprint/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/content/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/publication/preprint/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/publication/preprint/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
@@ -632,9 +632,9 @@ Crash --&gt; [*]
     
     <item>
       <title>Slides</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/slides/example/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/content/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/slides/example/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-hugo-blox-builder&#34;&gt;Create slides in Markdown with Hugo Blox Builder&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://hugoblox.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Builder&lt;/a&gt; | &lt;a href=&#34;https://docs.hugoblox.com/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -756,46 +756,10 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Privacy Policy</title>
-      <link>http://localhost:1313/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/privacy/</guid>
-      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/privacy/</guid>
-      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>http://localhost:1313/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/terms/</guid>
-      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/terms/</guid>
-      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Example Project</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/project/example/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/content/project/example/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/project/example/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/project/example/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -806,17 +770,17 @@ $$&lt;/p&gt;
     
     <item>
       <title>External Project</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/project/external-project/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/content/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/project/external-project/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/project/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An example journal article</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/publication/journal-article/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/content/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/publication/journal-article/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/publication/journal-article/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -833,9 +797,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>An example conference paper</title>
-      <link>http://localhost:1313/theme-academic-cv-main/content/publication/conference-paper/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/content/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/content/publication/conference-paper/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/publication/conference-paper/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -852,9 +816,9 @@ $$&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>http://localhost:1313/theme-academic-cv-main/license/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/license/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/license/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/license/</guid>
       <description>&lt;p&gt;MIT License&lt;/p&gt;
 &lt;p&gt;Copyright (c) 2016-present George Cushen&lt;/p&gt;
 &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -877,9 +841,9 @@ SOFTWARE.&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>http://localhost:1313/theme-academic-cv-main/readme/</link>
+      <link>https://juuhuu.github.io/theme-academic-cv-main/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/theme-academic-cv-main/readme/</guid>
+      <guid>https://juuhuu.github.io/theme-academic-cv-main/readme/</guid>
       <description>&lt;h1 id=&#34;hugo-academic-cv-themehttpsgithubcomhugobloxtheme-academic-cv&#34;&gt;&lt;a href=&#34;https://github.com/HugoBlox/theme-academic-cv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic CV Theme&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://hugoblox.com/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
 

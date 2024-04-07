@@ -3,7 +3,7 @@
 <!-- Last Published: April 7, 2024 --><html lang="en-us" >
 
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -73,7 +73,7 @@
 
   
 
-  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
 
   
   
@@ -217,7 +217,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.css" />
+  <link rel="stylesheet" href="/css/wowchemy.f6689966c0a10712f95f034011917db0.css" />
 
   
   
@@ -241,6 +241,45 @@
 
 
 
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-37HENQ373L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-37HENQ373L', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
 
 
 
@@ -286,8 +325,8 @@
 
 
 
-<link rel="alternate" hreflang="en-us" href="http://localhost:1313/publication/faims_peak/peak/" />
-<link rel="canonical" href="http://localhost:1313/publication/faims_peak/peak/" />
+<link rel="alternate" hreflang="en-us" href="https://juuhuu.github.io/publication/faims_peak/peak/" />
+<link rel="canonical" href="https://juuhuu.github.io/publication/faims_peak/peak/" />
 
 
 
@@ -321,7 +360,7 @@
 
   <meta property="twitter:site" content="@GetResearchDev" />
   <meta property="twitter:creator" content="@GetResearchDev" />
-<meta property="twitter:image" content="http://localhost:1313/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png" />
+<meta property="twitter:image" content="https://juuhuu.github.io/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png" />
 
 
 
@@ -329,9 +368,9 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Juu&#39;s" />
-<meta property="og:url" content="http://localhost:1313/publication/faims_peak/peak/" />
+<meta property="og:url" content="https://juuhuu.github.io/publication/faims_peak/peak/" />
 <meta property="og:title" content="Rapid method for accurate peak position extraction in high-field asymmetric ion mobility spectrometry | Juu&#39;s" />
-<meta property="og:description" content="High-field asymmetric waveform ion mobility spectrometry (FAIMS) enables precise identification of substances through fingerprint spectra obtained by multi-cycle scans at different separation voltages (DV) and nonlinear functions. To improve the scan speed of compensating voltage (CV) in multi-cycle scanning, the challenge arises in peak position shifts. This article proposes a method to accurately determine peak positions regardless of scan speed by exploiting the symmetric features of spectra obtained through positive and negative CV scans. The proposed method enables extremely fast scan speeds. A custom-built FAIMS system was used to verify the correlation between peak shifts and scan speed, the symmetry of spectra peaks under positive and negative CV scan modes, and the peak positions and solution errors of nonlinear functions by using benzene, styrene, acetone, toluene, m-xylene, and hydrogen sulfide as experimental samples. The results demonstrate the widespread occurrence of peak shifts, with peak deviations reaching as high as 2.49% even in slow scans of 0.75 V/s. As scan speed increases, peak position deviations gradually increase, with the maximum deviation reaching 46.83% at a scan speed of 30 V/s. By applying the proposed averaging method, peak positions of the six substances were obtained within the scan speed range of 30 to 0.75 V/s. Compared to traditional methods, the maximum peak position error using the averaging method was reduced by approximately 87.5%, and the spectrum acquisition time was reduced by 85%. The use of the averaging method reduced the calculation error of the alpha function by 88% and decreased the acquisition time by 80%. The research findings of this study offer a solution for the accurate determination of peak positions in FAIMS under fast scanning." /><meta property="og:image" content="http://localhost:1313/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:description" content="High-field asymmetric waveform ion mobility spectrometry (FAIMS) enables precise identification of substances through fingerprint spectra obtained by multi-cycle scans at different separation voltages (DV) and nonlinear functions. To improve the scan speed of compensating voltage (CV) in multi-cycle scanning, the challenge arises in peak position shifts. This article proposes a method to accurately determine peak positions regardless of scan speed by exploiting the symmetric features of spectra obtained through positive and negative CV scans. The proposed method enables extremely fast scan speeds. A custom-built FAIMS system was used to verify the correlation between peak shifts and scan speed, the symmetry of spectra peaks under positive and negative CV scan modes, and the peak positions and solution errors of nonlinear functions by using benzene, styrene, acetone, toluene, m-xylene, and hydrogen sulfide as experimental samples. The results demonstrate the widespread occurrence of peak shifts, with peak deviations reaching as high as 2.49% even in slow scans of 0.75 V/s. As scan speed increases, peak position deviations gradually increase, with the maximum deviation reaching 46.83% at a scan speed of 30 V/s. By applying the proposed averaging method, peak positions of the six substances were obtained within the scan speed range of 30 to 0.75 V/s. Compared to traditional methods, the maximum peak position error using the averaging method was reduced by approximately 87.5%, and the spectrum acquisition time was reduced by 85%. The use of the averaging method reduced the calculation error of the alpha function by 88% and decreased the acquisition time by 80%. The research findings of this study offer a solution for the accurate determination of peak positions in FAIMS under fast scanning." /><meta property="og:image" content="https://juuhuu.github.io/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -364,7 +403,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/publication/faims_peak/peak/"
+    "@id": "https://juuhuu.github.io/publication/faims_peak/peak/"
   },
   "headline": "Rapid method for accurate peak position extraction in high-field asymmetric ion mobility spectrometry",
   
@@ -381,7 +420,7 @@
     "name": "Juu's",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_192x192_fill_lanczos_center_3.png"
+      "url": "https://juuhuu.github.io/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "High-field asymmetric waveform ion mobility spectrometry (FAIMS) enables precise identification of substances through fingerprint spectra obtained by multi-cycle scans at different separation voltages (DV) and nonlinear functions. To improve the scan speed of compensating voltage (CV) in multi-cycle scanning, the challenge arises in peak position shifts. This article proposes a method to accurately determine peak positions regardless of scan speed by exploiting the symmetric features of spectra obtained through positive and negative CV scans. The proposed method enables extremely fast scan speeds. A custom-built FAIMS system was used to verify the correlation between peak shifts and scan speed, the symmetry of spectra peaks under positive and negative CV scan modes, and the peak positions and solution errors of nonlinear functions by using benzene, styrene, acetone, toluene, m-xylene, and hydrogen sulfide as experimental samples. The results demonstrate the widespread occurrence of peak shifts, with peak deviations reaching as high as 2.49% even in slow scans of 0.75 V/s. As scan speed increases, peak position deviations gradually increase, with the maximum deviation reaching 46.83% at a scan speed of 30 V/s. By applying the proposed averaging method, peak positions of the six substances were obtained within the scan speed range of 30 to 0.75 V/s. Compared to traditional methods, the maximum peak position error using the averaging method was reduced by approximately 87.5%, and the spectrum acquisition time was reduced by 85%. The use of the averaging method reduced the calculation error of the alpha function by 88% and decreased the acquisition time by 80%. The research findings of this study offer a solution for the accurate determination of peak positions in FAIMS under fast scanning."
@@ -437,7 +476,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.js"></script>
+  <script src="/js/wowchemy-init.min.9e4214442a7711d35691acd58f6f6361.js"></script>
 
   
 
@@ -947,7 +986,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffaims_peak%2Fpeak%2F&amp;text=Rapid&#43;method&#43;for&#43;accurate&#43;peak&#43;position&#43;extraction&#43;in&#43;high-field&#43;asymmetric&#43;ion&#43;mobility&#43;spectrometry" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjuuhuu.github.io%2Fpublication%2Ffaims_peak%2Fpeak%2F&amp;text=Rapid&#43;method&#43;for&#43;accurate&#43;peak&#43;position&#43;extraction&#43;in&#43;high-field&#43;asymmetric&#43;ion&#43;mobility&#43;spectrometry" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -964,7 +1003,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffaims_peak%2Fpeak%2F&amp;t=Rapid&#43;method&#43;for&#43;accurate&#43;peak&#43;position&#43;extraction&#43;in&#43;high-field&#43;asymmetric&#43;ion&#43;mobility&#43;spectrometry" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fjuuhuu.github.io%2Fpublication%2Ffaims_peak%2Fpeak%2F&amp;t=Rapid&#43;method&#43;for&#43;accurate&#43;peak&#43;position&#43;extraction&#43;in&#43;high-field&#43;asymmetric&#43;ion&#43;mobility&#43;spectrometry" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -983,7 +1022,7 @@
         
       
       <li>
-        <a href="mailto:?subject=Rapid%20method%20for%20accurate%20peak%20position%20extraction%20in%20high-field%20asymmetric%20ion%20mobility%20spectrometry&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffaims_peak%2Fpeak%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Rapid%20method%20for%20accurate%20peak%20position%20extraction%20in%20high-field%20asymmetric%20ion%20mobility%20spectrometry&amp;body=https%3A%2F%2Fjuuhuu.github.io%2Fpublication%2Ffaims_peak%2Fpeak%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1000,7 +1039,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffaims_peak%2Fpeak%2F&amp;title=Rapid&#43;method&#43;for&#43;accurate&#43;peak&#43;position&#43;extraction&#43;in&#43;high-field&#43;asymmetric&#43;ion&#43;mobility&#43;spectrometry" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fjuuhuu.github.io%2Fpublication%2Ffaims_peak%2Fpeak%2F&amp;title=Rapid&#43;method&#43;for&#43;accurate&#43;peak&#43;position&#43;extraction&#43;in&#43;high-field&#43;asymmetric&#43;ion&#43;mobility&#43;spectrometry" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1017,7 +1056,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Rapid&#43;method&#43;for&#43;accurate&#43;peak&#43;position&#43;extraction&#43;in&#43;high-field&#43;asymmetric&#43;ion&#43;mobility&#43;spectrometry%20http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffaims_peak%2Fpeak%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Rapid&#43;method&#43;for&#43;accurate&#43;peak&#43;position&#43;extraction&#43;in&#43;high-field&#43;asymmetric&#43;ion&#43;mobility&#43;spectrometry%20https%3A%2F%2Fjuuhuu.github.io%2Fpublication%2Ffaims_peak%2Fpeak%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1034,7 +1073,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffaims_peak%2Fpeak%2F&amp;title=Rapid&#43;method&#43;for&#43;accurate&#43;peak&#43;position&#43;extraction&#43;in&#43;high-field&#43;asymmetric&#43;ion&#43;mobility&#43;spectrometry" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fjuuhuu.github.io%2Fpublication%2Ffaims_peak%2Fpeak%2F&amp;title=Rapid&#43;method&#43;for&#43;accurate&#43;peak&#43;position&#43;extraction&#43;in&#43;high-field&#43;asymmetric&#43;ion&#43;mobility&#43;spectrometry" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1136,16 +1175,6 @@
   
 
 
-<p class="powered-by">
-  
-  <a href="/privacy/">Privacy Policy</a>
-  
-  
-   &middot; 
-  <a href="/terms/">Terms</a>
-  
-</p>
-
 
 
 
@@ -1189,7 +1218,7 @@
   
 
 
-<script src="/js/vendor-bundle.min.js"></script>
+<script src="/js/vendor-bundle.min.ff7771056d34ad9f2de2d8f6a466e748.js"></script>
 
 
 
@@ -1270,7 +1299,7 @@
 <script id="page-data" type="application/json">{"use_headroom":true}</script>
 
 
-  <script src="/js/wowchemy-headroom.js" type="module"></script>
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
 
 
 
@@ -1284,11 +1313,11 @@
   
 
 
-<script src="/en/js/wowchemy.min.js"></script>
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
 
 
 
-  <script src="/js/wowchemy-map.js" type="module"></script>
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
 
 
 
@@ -1321,7 +1350,7 @@
 </div>
 
 
-  <script src="/js/wowchemy-publication.js" type="module"></script>
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
 
 
 
