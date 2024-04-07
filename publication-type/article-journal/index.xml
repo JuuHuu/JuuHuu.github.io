@@ -5,12 +5,20 @@
     <link>http://localhost:1313/publication-type/article-journal/</link>
       <atom:link href="http://localhost:1313/publication-type/article-journal/index.xml" rel="self" type="application/rss+xml" />
     <description>Article-Journal</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 05 Apr 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png</url>
       <title>Article-Journal</title>
       <link>http://localhost:1313/publication-type/article-journal/</link>
     </image>
+    
+    <item>
+      <title>Theoretical and Experimental Study on the Effect of Scanning Speed on Faims Peaks</title>
+      <link>http://localhost:1313/publication/theoretical_and/thero/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/theoretical_and/thero/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Rapid method for accurate peak position extraction in high-field asymmetric ion mobility spectrometry</title>
