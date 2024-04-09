@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Demo | Juu&#39;s</title>
-    <link>https://juuhuu.github.io/tag/demo/</link>
-      <atom:link href="https://juuhuu.github.io/tag/demo/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tag/demo/</link>
+      <atom:link href="http://localhost:1313/tag/demo/index.xml" rel="self" type="application/rss+xml" />
     <description>Demo</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://juuhuu.github.io/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png</url>
       <title>Demo</title>
-      <link>https://juuhuu.github.io/tag/demo/</link>
+      <link>http://localhost:1313/tag/demo/</link>
     </image>
     
     <item>
       <title>External Project</title>
-      <link>https://juuhuu.github.io/theme-academic-cv-main/content/project/external-project/</link>
+      <link>http://localhost:1313/theme-academic-cv-main/content/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://juuhuu.github.io/theme-academic-cv-main/content/project/external-project/</guid>
+      <guid>http://localhost:1313/theme-academic-cv-main/content/project/external-project/</guid>
       <description></description>
     </item>
     

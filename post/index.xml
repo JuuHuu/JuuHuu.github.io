@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Juu&#39;s</title>
-    <link>https://juuhuu.github.io/post/</link>
-      <atom:link href="https://juuhuu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/post/</link>
+      <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 08 Apr 2024 15:58:05 +0800</lastBuildDate>
     <image>
-      <url>https://juuhuu.github.io/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
-      <link>https://juuhuu.github.io/post/</link>
+      <link>http://localhost:1313/post/</link>
     </image>
     
     <item>
       <title>A* Algorithm Using MATLAB</title>
-      <link>https://juuhuu.github.io/post/astar/astar/</link>
+      <link>http://localhost:1313/post/astar/astar/</link>
       <pubDate>Mon, 08 Apr 2024 15:58:05 +0800</pubDate>
-      <guid>https://juuhuu.github.io/post/astar/astar/</guid>
+      <guid>http://localhost:1313/post/astar/astar/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;A* was first proposed to plan a mobile robot actions, but it has been shown applicable to any problem that satisfying the conditions of a cost algebra.This article introduced A* and implemented using MATLAB.&lt;/p&gt;
 &lt;h3 id=&#34;a-algorithm&#34;&gt;A* algorithm&lt;/h3&gt;
@@ -59,9 +59,9 @@
     
     <item>
       <title>Personal Web Using Hugo</title>
-      <link>https://juuhuu.github.io/post/usinghugo/usinghugo/</link>
+      <link>http://localhost:1313/post/usinghugo/usinghugo/</link>
       <pubDate>Thu, 04 Apr 2024 21:48:44 +0800</pubDate>
-      <guid>https://juuhuu.github.io/post/usinghugo/usinghugo/</guid>
+      <guid>http://localhost:1313/post/usinghugo/usinghugo/</guid>
       <description>&lt;p&gt;Hugo is a framework to generate statics website, and Github is to publish the website. This article demonstrates using Hugo and GitHub to setup a personal website. It’s easy to maintain and clear to read.&lt;/p&gt;
 &lt;h2 id=&#34;preparing&#34;&gt;Preparing&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-repository-on-github&#34;&gt;Create a repository on GitHub&lt;/h3&gt;

@@ -2,185 +2,185 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/event/example/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/event/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/event/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/post/astar/astar/</loc>
+    <loc>http://localhost:1313/post/astar/astar/</loc>
     <lastmod>2024-04-08T15:58:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/algorithm/</loc>
+    <loc>http://localhost:1313/tag/algorithm/</loc>
     <lastmod>2024-04-08T15:58:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/matlab/</loc>
+    <loc>http://localhost:1313/tag/matlab/</loc>
     <lastmod>2024-04-08T15:58:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/path-planning/</loc>
+    <loc>http://localhost:1313/tag/path-planning/</loc>
     <lastmod>2024-04-08T15:58:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2024-04-08T15:58:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/robotics/</loc>
+    <loc>http://localhost:1313/tag/robotics/</loc>
     <lastmod>2024-04-08T15:58:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-04-08T15:58:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/publication-type/article-journal/</loc>
+    <loc>http://localhost:1313/publication-type/article-journal/</loc>
     <lastmod>2024-04-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/faims/</loc>
+    <loc>http://localhost:1313/tag/faims/</loc>
     <lastmod>2024-04-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/publication_types/</loc>
+    <loc>http://localhost:1313/publication_types/</loc>
     <lastmod>2024-04-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/publication/</loc>
+    <loc>http://localhost:1313/publication/</loc>
     <lastmod>2024-04-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/publication/theoretical_and/thero/</loc>
+    <loc>http://localhost:1313/publication/theoretical_and/thero/</loc>
     <lastmod>2024-04-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/github/</loc>
+    <loc>http://localhost:1313/tag/github/</loc>
     <lastmod>2024-04-04T21:48:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/hugo/</loc>
+    <loc>http://localhost:1313/tag/hugo/</loc>
     <lastmod>2024-04-04T21:48:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/post/usinghugo/usinghugo/</loc>
+    <loc>http://localhost:1313/post/usinghugo/usinghugo/</loc>
     <lastmod>2024-04-04T21:48:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/website/</loc>
+    <loc>http://localhost:1313/tag/website/</loc>
     <lastmod>2024-04-04T21:48:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/post/blog-with-jupyter/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/post/blog-with-jupyter/</loc>
     <lastmod>2023-11-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/post/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/post/</loc>
     <lastmod>2023-11-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/publication/faims_peak/peak/</loc>
+    <loc>http://localhost:1313/publication/faims_peak/peak/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/academic/</loc>
+    <loc>http://localhost:1313/tag/academic/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/category/demo/</loc>
+    <loc>http://localhost:1313/category/demo/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/post/getting-started/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/post/getting-started/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/%E5%BC%80%E6%BA%90/</loc>
+    <loc>http://localhost:1313/tag/%E5%BC%80%E6%BA%90/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/category/%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://localhost:1313/category/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/post/writing-technical-content/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/post/writing-technical-content/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/publication/preprint/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/publication/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/publication-type/article/</loc>
+    <loc>http://localhost:1313/publication-type/article/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/publication/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/publication/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/source-themes/</loc>
+    <loc>http://localhost:1313/tag/source-themes/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/slides/example/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/deep-learning/</loc>
+    <loc>http://localhost:1313/tag/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/tag/demo/</loc>
+    <loc>http://localhost:1313/tag/demo/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/project/example/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/project/example/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/project/external-project/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/project/external-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/publication/journal-article/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/content/publication/conference-paper/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/content/publication/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/publication-type/paper-conference/</loc>
+    <loc>http://localhost:1313/publication-type/paper-conference/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/license/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/license/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/theme-academic-cv-main/readme/</loc>
+    <loc>http://localhost:1313/theme-academic-cv-main/readme/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://juuhuu.github.io/event/</loc>
+    <loc>http://localhost:1313/event/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
