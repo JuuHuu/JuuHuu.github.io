@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MATLAB | Juu&#39;s</title>
+    <link>https://juuhuu.github.io/tag/matlab/</link>
+      <atom:link href="https://juuhuu.github.io/tag/matlab/index.xml" rel="self" type="application/rss+xml" />
+    <description>MATLAB</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 08 Apr 2024 15:58:05 +0800</lastBuildDate>
+    <image>
+      <url>https://juuhuu.github.io/media/icon_hu7db9054e36068c46bdf41746b47a34b6_4348_512x512_fill_lanczos_center_3.png</url>
+      <title>MATLAB</title>
+      <link>https://juuhuu.github.io/tag/matlab/</link>
+    </image>
+    
+    <item>
+      <title>A* Algorithm Using MATLAB</title>
+      <link>https://juuhuu.github.io/post/astar/astar/</link>
+      <pubDate>Mon, 08 Apr 2024 15:58:05 +0800</pubDate>
+      <guid>https://juuhuu.github.io/post/astar/astar/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;A* was first proposed to plan a mobile robot actions, but it has been shown applicable to any problem that satisfying the conditions of a cost algebra.This article introduced A* and implemented using MATLAB.&lt;/p&gt;
+&lt;h3 id=&#34;a-algorithm&#34;&gt;A* algorithm&lt;/h3&gt;
+&lt;h4 id=&#34;graph-nodes-and-edges&#34;&gt;Graph, Nodes and Edges&lt;/h4&gt;
+&lt;p&gt;The graph search algorithm (of course including A* algorithm) takes a graph as input. The graph consists of some &amp;ldquo;nodes&amp;rdquo; and &amp;ldquo;edges&amp;rdquo; that connect the nodes, as illustrated in Figure 1.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;nodes_edges.jpg&#34; alt=&#34;graphs,nodes,and edges&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure 1. Graph&lt;/em&gt;, where nodes with blue outline represents start, with red represents goals, numbers around nodes represents&lt;/p&gt;
+&lt;p&gt;For example, when planning robotics motion, the nodes represent locations that a robotics can reach, edges represent possible path a robot can move from one nodes to others. While doing motion plan, the nodes represent possible joint config, and edges represent possible transfer path between joints.&lt;/p&gt;
+&lt;h4 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h4&gt;
+&lt;p&gt;After representing the problem using Graph, the next step is to implement search. There are lots of algorithms run on graphs, here we will explore three of them: Breadth First Search, Dijkstra&amp;rsquo;s Algorithm, and A*.&lt;/p&gt;
+&lt;h5 id=&#34;breadth-first-search&#34;&gt;Breadth First Search&lt;/h5&gt;
+&lt;p&gt;Breadth First Search algorithm explores equally in all directions.&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;A* Search Algorithm.&amp;rdquo; In Wikipedia, April 6, 2024. &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=A&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/w/index.php?title=A&lt;/a&gt;*_search_algorithm&amp;amp;oldid=1217507422.&lt;/li&gt;
+&lt;li&gt;Patel, Amit J. &amp;ldquo;Introduction to the A* Algorithm.&amp;ldquo;Red Blob Games, 2014. &lt;a href=&#34;https://www.redblobgames.com/a-star/introduction.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.redblobgames.com/a-star/introduction.html&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

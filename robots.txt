@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://juuhuu.github.io/sitemap.xml
