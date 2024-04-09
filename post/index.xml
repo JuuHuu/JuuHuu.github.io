@@ -21,9 +21,9 @@
 &lt;p&gt;Hugo academic theme does not contain TOC, which is essential when viewing long articles. This article provide a simple method to add TOC in Hugo academic theme posts.&lt;/p&gt;
 &lt;h2 id=&#34;method&#34;&gt;Method&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Modify the single.html.
-The single.html usually under &amp;rsquo;layouts/_default&amp;rsquo; fold. Using search app can find it easily. Using following codes to replace the origial contants:&lt;/li&gt;
+&lt;li&gt;Modify the &lt;code&gt;single.html&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;The &lt;code&gt;single.html&lt;/code&gt; usually under &lt;code&gt;layouts/_default&lt;/code&gt; fold. Using search app can find it easily. Replacing all the contants by following codes:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{- define &amp;#34;main&amp;#34; -}}
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{ if .Params.toc }}
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;container-fluid docs&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -57,15 +57,13 @@ The single.html usually under &amp;rsquo;layouts/_default&amp;rsquo; fold. Using
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In my case, an error occured: &lt;code&gt;partial &amp;quot;docs_toc_foot&amp;quot; not found&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;If you have the same problem, add an empty file naming &lt;code&gt;docs_toc_foot.html&lt;/code&gt; to path:&lt;code&gt;layouts/partials&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you have the same problem, add an empty file naming &lt;code&gt;docs_toc_foot.html&lt;/code&gt; to path: &lt;code&gt;layouts/partials&lt;/code&gt;.&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Changing your &lt;code&gt;.md&lt;/code&gt; file:
-Adding a config in you &lt;code&gt;.md&lt;/code&gt; file:&lt;/li&gt;
+&lt;li&gt;Changing your &lt;code&gt;.md&lt;/code&gt; file:&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Adding a config in you &lt;code&gt;.md&lt;/code&gt; file:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;toc: true
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;On your article right hand side, there should be a table of contants:
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On your page right hand side, there should be a table of contants:
 
 
 
@@ -94,12 +92,10 @@ Adding a config in you &lt;code&gt;.md&lt;/code&gt; file:&lt;/li&gt;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Config your TOC (Optional)
-Add following contant in your &lt;code&gt;config.yaml&lt;/code&gt; file can changt TOC style:&lt;/p&gt;
-&lt;/li&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Config your TOC (Optional)&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Add following contant in your &lt;code&gt;config.yaml&lt;/code&gt; file can change TOC style:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;markup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tableOfContents&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;startLevel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
