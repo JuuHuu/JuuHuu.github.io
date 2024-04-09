@@ -1,0 +1,12 @@
+.toc-container {
+    position: fixed;
+    top: 100px; /* Adjust based on your header */
+    right: 20px;
+    width: 200px; /* Or adjust to fit */
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: #f8f9fa; /* Based on Bootstrap's default bg */
+    border: 1px solid #dee2e6; /* Bootstrap's default border color */
+    padding: 1rem;
+    border-radius: .25rem; /* Bootstrap's default border radius */
+}
