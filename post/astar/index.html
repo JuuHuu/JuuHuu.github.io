@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 10, 2024 --><html lang="en-us" >
+<!-- Last Published: April 14, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -217,7 +217,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.0309e4954ec9e10a8837ff85b022b7bc.css" />
+  <link rel="stylesheet" href="/css/wowchemy.f6689966c0a10712f95f034011917db0.css" />
 
   
   
@@ -467,7 +467,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="e9f2111f4cf00f0c01bd1dfc809f12c7" >
+<body id="top" data-spy="scroll"  data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="e9f2111f4cf00f0c01bd1dfc809f12c7" >
 
   
   
@@ -789,14 +789,22 @@
   <ul>
     <li><a href="#introduction">Introduction</a>
       <ul>
-        <li><a href="#graph">Graph</a></li>
-        <li><a href="#algorithms">Algorithms</a>
+        <li><a href="#graph-nodes-and-edges">Graph, Nodes and Edges</a></li>
+      </ul>
+    </li>
+    <li><a href="#algorithms">Algorithms</a>
+      <ul>
+        <li>
           <ul>
             <li><a href="#breadth-first-search">Breadth First Search</a></li>
+            <li><a href="#dijkstras-algorithm">Dijkstra&rsquo;s Algorithm</a></li>
+            <li><a href="#heuristic-search-greedy-best-first-search">Heuristic search (Greedy Best First Search)</a></li>
+            <li><a href="#a-algorithm">A* algorithm</a></li>
           </ul>
         </li>
       </ul>
     </li>
+    <li><a href="#summary">Summary</a></li>
     <li><a href="#reference">Reference</a></li>
   </ul>
 </nav>
@@ -853,7 +861,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    6 min read
+    10 min read
   </span>
   
 
@@ -881,8 +889,8 @@
               <div class="article-style">
                 <h2 id="introduction">Introduction</h2>
 <p>A* was first proposed to plan a mobile robot actions, but it has been shown applicable to any problem that satisfying the conditions of a cost algebra.This article introduced A* and implemented using MATLAB.</p>
-<h3 id="graph">Graph</h3>
-<p>The graph search algorithm (of course including A* algorithm) takes a graph as input. The graph consists of some &ldquo;nodes&rdquo; and &ldquo;edges&rdquo; that connect the nodes, as illustrated in Figure 1.</p>
+<h3 id="graph-nodes-and-edges">Graph, Nodes and Edges</h3>
+<p>A* is a kind of graph search algorithm, the graph search algorithm takes a graph as input. The graph consists of some &ldquo;nodes&rdquo; and &ldquo;edges&rdquo;. Nodes represet possible configurations (positions, joint angles, etc.), while edges connect two transferable nodes. The weight (cost) of edges represent the cost transfer from one node to another. Graph is illustrated in Figure 1.</p>
 <p>
 
 
@@ -911,13 +919,13 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p><em>Figure 1. Graph</em>, where nodes with blue outline represents start, with red represents goals, numbers around nodes represents</p>
-<p>For example, when planning robotics motion, the nodes represent locations that a robotics can reach, edges represent possible path a robot can move from one nodes to others. While doing motion plan, the nodes represent possible joint configuration, and edges represent possible transfer path between joints&rsquo; configuration.</p>
-<h3 id="algorithms">Algorithms</h3>
+<p><em>Figure 1. Graph</em>, where nodes with blue outline represents start, with red represents goals, numbers around edges represents costs</p>
+<p>For example, when planning robotics motion, the nodes represent locations that a robotics can reach, edges represent possible path a robot can move from one nodes to others, cost represent the distance. While doing motion plan, the nodes represent possible joint configuration, and edges represent possible transfer path between joints&rsquo; configuration.</p>
+<h2 id="algorithms">Algorithms</h2>
 <p>After representing the problem using Graph, the next step is to implement search. There are lots of algorithms run on graphs, here we will explore three of them: Breadth First Search, Dijkstra&rsquo;s Algorithm, and A*.</p>
 <h4 id="breadth-first-search">Breadth First Search</h4>
-<p><em>Breadth First Search</em> algorithm explores equally in all directions, Which means the cost (weight) of edges are all equal. The key ideal for <em>Breadth First Search</em> algorithm is to maintain a &lsquo;frontier&rsquo; variable that record the most front nodes.</p>
-<p>The peudocode is shown below:</p>
+<p><em>Breadth First Search</em> algorithm explores equally in all directions, which means the cost (weight) of edges are all equal. The key ideal for <em>Breadth First Search</em> algorithm is to maintain a &lsquo;frontier&rsquo; variable that record the most front nodes.</p>
+<p>The pseudocode is shown below:</p>
 <ol>
 <li>Initial parameters</li>
 <li>Add starting nodes to <em><strong>frontier</strong></em></li>
@@ -976,7 +984,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 </html>
-<p>However, we can only visit all the node in graph. NO path information is provided till now. We can modify the loop by replace the <em><strong>reached</strong></em> to a dictionary <em><strong>came_from</strong></em>, where the key are previous <em><strong>reached</strong></em> and value are where the key came from.</p>
+<p>However, we can only visit all the node in graph. NO path information is provided till now. To return path information, modify the loop by replace the <em><strong>reached</strong></em> to a dictionary <em><strong>came_from</strong></em>, where the key are previous <em><strong>reached</strong></em> node and value are where the key came from.</p>
 <p>The peudocode is shown below:</p>
 <ol>
 <li>Initial parameters</li>
@@ -1131,7 +1139,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </span></span><span class="line"><span class="cl"><span class="c">%         fprintf(&#39;%d: %d\n&#39;, currentKey, currentValue);</span>
 </span></span><span class="line"><span class="cl"><span class="c">%     end</span>
 </span></span><span class="line"><span class="cl"><span class="c">% ^^^^^^^^Breadth First Search  _ with path^^^^^^^^^^^^</span>
-</span></span></code></pre></div><p>Since Matlab do not directly show the contents of Map, we add several lines to print the map. Printing results is shown below.</p>
+</span></span></code></pre></div><p>Since MATLAB do not directly show the contents of Map, we add several lines to print the map. Printing results is shown below.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">1<span class="p">:</span> <span class="nl">1</span>
 </span></span><span class="line"><span class="cl">2<span class="p">:</span> <span class="nl">1</span>
 </span></span><span class="line"><span class="cl">3<span class="p">:</span> <span class="nl">1</span>
@@ -1144,7 +1152,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </span></span><span class="line"><span class="cl">10: 7
 </span></span><span class="line"><span class="cl">11: 9
 </span></span><span class="line"><span class="cl">12: 8
-</span></span></code></pre></div><p>Then we can build the path through the this map:</p>
+</span></span></code></pre></div><p>Then we can build the path through the map:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="n">path</span> <span class="p">=</span> <span class="p">[</span><span class="n">goal_node</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="n">previous_node</span><span class="p">=</span><span class="n">came_from</span><span class="p">(</span><span class="n">goal_node</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">previous_node</span><span class="o">~=</span><span class="n">star_node</span>
@@ -1152,7 +1160,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </span></span><span class="line"><span class="cl">    <span class="n">previous_node</span><span class="p">=</span><span class="n">came_from</span><span class="p">(</span><span class="n">previous_node</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="k">end</span>
 </span></span><span class="line"><span class="cl"><span class="n">path</span><span class="p">=[</span><span class="n">path</span> <span class="n">star_node</span><span class="p">];</span>
-</span></span></code></pre></div><p>Attention that, We explore all the graph, then extract the path from start to goal. However, in some case, we only need to find the goal and exit. To exit the program upon we find the goal, adding following under step 4 to the while loop:</p>
+</span></span></code></pre></div><p>Attention that, we explore all the graph, then extract the path from start to goal. However, in some case, we only need to find the goal and exit. To exit the program upon we find the goal, adding following under step 4 to the while loop:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c">% if we find the goal, then exit the program.</span>
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">current</span><span class="o">==</span><span class="n">goal_node</span>
@@ -1187,11 +1195,288 @@ document.addEventListener("DOMContentLoaded", function() {
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>The code</p>
+<p>The complete breadth first search code can be found <a href="git">here</a></p>
+<h4 id="dijkstras-algorithm">Dijkstra&rsquo;s Algorithm</h4>
+<p>In the  <a href="#breadth-first-search">breadth first search algorithm</a>, costs are the same between nodes. However, the cost traveling from one nodes to another usually does not the same. As illustrate  in the figure below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="path with cost" srcset="
+               /post/astar/figure2_hud5d3f3217788e55a44e2ca5430f5be88_79282_319d9ff0bbada47b7c70f9f6b5f4903d.webp 400w,
+               /post/astar/figure2_hud5d3f3217788e55a44e2ca5430f5be88_79282_d6299afa7d2fa97160f9a81252a8c34f.webp 760w,
+               /post/astar/figure2_hud5d3f3217788e55a44e2ca5430f5be88_79282_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/post/astar/figure2_hud5d3f3217788e55a44e2ca5430f5be88_79282_319d9ff0bbada47b7c70f9f6b5f4903d.webp"
+               width="760"
+               height="491"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+Supposing you are traveling from node A to node B, and a lake in between. There are two path, where path 1 crosses the lake, path 2 on the land. Though path 1 has a shorter length, most people will choose follow path 2, because the energy (or times,etc.) cost by path 2 will less than path 1 for most people. To take the cost into path planning, we introduce Dijkstra&rsquo;s Algorithm.</p>
+<p>Instead of adding all non-reached neighbors into the <em><strong>frontier</strong></em>, Dijkstra&rsquo;s Algorithm compare the cost of the next nodes, if the cost is less than current one, then it will be added into <em><strong>frontier</strong></em>.
+The peudocode is shown below:</p>
+<ol>
+<li>Initial parameters</li>
+<li>Add starting nodes and set priority =0 to <em><strong>frontier</strong></em></li>
+<li>repeat following until <em><strong>frontier</strong></em> is empty</li>
+<li>Move the highest priority element of <em><strong>frontier</strong></em> to <em><strong>current node</strong></em></li>
+<li>Find the <em><strong>neighbors</strong></em> of <em><strong>current node</strong></em></li>
+<li>Calculate the <em><strong>new_cost</strong></em> = cost_so_far(current) + cost to next node</li>
+<li>If <em><strong>neighbors</strong></em> is not in <em><strong>cost_so_far</strong></em> OR new_cost &lt; cost_so_far(next)
+<ol>
+<li>cost_so_far[next]=<em><strong>new_cost</strong></em></li>
+<li>add <em><strong>neighbor</strong></em> and <em><strong>new_cost</strong></em> to <em><strong>frontier</strong></em></li>
+<li>came_from[next]=current</li>
+</ol>
+</li>
+<li>end repeat</li>
+</ol>
+<p>The complete Algorithm code can be found <a href="git">here</a></p>
+<p>The finding process is shown below:</p>
+<html>
+<video id="myVideo2" controls>
+  <source src="Dijkstra.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<script>
+// Set video playback speed here
+document.addEventListener("DOMContentLoaded", function() {
+  var video = document.getElementById("myVideo2");
+  video.playbackRate = 0.1;
+});
+</script>
+</html>
+<p>The final path is shown below:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Dijkstra&amp;rsquo;s" srcset="
+               /post/astar/path_Dijkstra_hu4041f6a8ad5c37d7dce5f957ff220c50_71298_ce1437a43e42e84d79ee78dfa9283326.webp 400w,
+               /post/astar/path_Dijkstra_hu4041f6a8ad5c37d7dce5f957ff220c50_71298_70aaf4092803193636d3a8fc12f19ee3.webp 760w,
+               /post/astar/path_Dijkstra_hu4041f6a8ad5c37d7dce5f957ff220c50_71298_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/post/astar/path_Dijkstra_hu4041f6a8ad5c37d7dce5f957ff220c50_71298_ce1437a43e42e84d79ee78dfa9283326.webp"
+               width="760"
+               height="490"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+Obviously, the path is different from breadth first search when adding the cost.</p>
+<h4 id="heuristic-search-greedy-best-first-search">Heuristic search (Greedy Best First Search)</h4>
+<p>In breadth first algorithm and Dijkstra&rsquo;s algorithm, the frontier is expanded in all directions. However, a common case is we know the direction, and we only want to find the path to that direction. Here introducing Heuristic search.</p>
+<p>Heuristic search also maintain an <em><strong>frontier</strong></em>, however, different from breadth search, heuristic search algorithm use heuristic cost  and search the highest priority neighbor first. Heuristic cost ususllay the distance from current nodes to the goal nodes.</p>
+<p>The pseudocode is show below:</p>
+<ol>
+<li>Initial parameters</li>
+<li>Add starting nodes and set priority =0 to <em><strong>frontier</strong></em></li>
+<li>repeat following until <em><strong>frontier</strong></em> is empty</li>
+<li>Move the highest priority element of <em><strong>frontier</strong></em> to <em><strong>current node</strong></em></li>
+<li>Find the <em><strong>neighbors</strong></em> of <em><strong>current node</strong></em></li>
+<li>If <em><strong>neighbors</strong></em> is not in <em><strong>came_from</strong></em>
+<ol>
+<li>calculate heuristic cost from <em><strong>neighbors</strong></em> to goal</li>
+<li>add <em><strong>neighbor</strong></em> and heuristic cost to <em><strong>frontier</strong></em></li>
+<li>came_from[next]=current</li>
+</ol>
+</li>
+<li>end repeat</li>
+</ol>
+<p>The complete code can be found <a href="git">here</a></p>
+<p>The explore process is quiet straightforward, one way to the goal. Noting that the cost beside the edge is not used in heuristic algorithm, instead we use the heuristic cost.
+the final path is shown below:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="heuristic search" srcset="
+               /post/astar/heuristic_hu939fab7e2c95046e08d3f2e09ead991b_75238_0cc8b5902a0433455bccaacc5c9b4be5.webp 400w,
+               /post/astar/heuristic_hu939fab7e2c95046e08d3f2e09ead991b_75238_56db64692ae043f9b57e827fdb2918ec.webp 760w,
+               /post/astar/heuristic_hu939fab7e2c95046e08d3f2e09ead991b_75238_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/post/astar/heuristic_hu939fab7e2c95046e08d3f2e09ead991b_75238_0cc8b5902a0433455bccaacc5c9b4be5.webp"
+               width="760"
+               height="425"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The algorithm runs faster when edges is quiet straightforward to the goal. However, when there are many &ldquo;dead end&rdquo;, the paths are not as good.</p>
+<p>The figure shown below demonstrate the graph with &ldquo;dead end&rdquo;. The starting node is 1 and goal node is 12. The heuristic algorithm first explore 1-6-11, because it is the most straightforward path from start node to goal node, However, it meets a dead end. Then follow 1-2-3-4-8-12 path to find the goal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="dead end" srcset="
+               /post/astar/path_Dijkstra_dead_hu167fcb61b32e8e2f8de4a2f7020730b9_25499_91e9861ea4334dadd1077ec9e850fd29.webp 400w,
+               /post/astar/path_Dijkstra_dead_hu167fcb61b32e8e2f8de4a2f7020730b9_25499_341a24af30669068a71dd6093fc670ad.webp 760w,
+               /post/astar/path_Dijkstra_dead_hu167fcb61b32e8e2f8de4a2f7020730b9_25499_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/post/astar/path_Dijkstra_dead_hu167fcb61b32e8e2f8de4a2f7020730b9_25499_91e9861ea4334dadd1077ec9e850fd29.webp"
+               width="504"
+               height="378"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>A brief summary:</strong></p>
+<p><a href="#breadth-first-search">Breadth first search algorithm</a></p>
+<ol>
+<li>explore the graph in all direction uniformly.</li>
+</ol>
+<p><a href="#dijkstras-algorithm">Dijkstra&rsquo;s algorithm</a></p>
+<ol>
+<li>explore the graph in all direction uniformly;</li>
+<li>consider the cost of edge.</li>
+</ol>
+<p><a href="#heuristic-search-greedy-best-first-search">Heuristic search algorithm</a></p>
+<ol>
+<li>explore the graph towards the goal direction.</li>
+</ol>
+<p>So is there any algorithm combine the Dijkstra&rsquo;s algorithm and Heuristic search algorithm, that explore the graph towards the goal direction, also consider the cost? That is A* algorithm</p>
+<h4 id="a-algorithm">A* algorithm</h4>
+<p>A* algorithm combine the advantages of Heuristic and Dijkstra&rsquo;s, it&rsquo;s very similar to Dijkstra&rsquo;s algorithm, just add the heuristic cost to the priority.</p>
+<p>The peudocode is shown below:</p>
+<ol>
+<li>Initial parameters</li>
+<li>Add starting nodes and set priority =0 to <em><strong>frontier</strong></em></li>
+<li>repeat following until <em><strong>frontier</strong></em> is empty</li>
+<li>Move the highest priority element of <em><strong>frontier</strong></em> to <em><strong>current node</strong></em></li>
+<li>Find the <em><strong>neighbors</strong></em> of <em><strong>current node</strong></em></li>
+<li>Calculate the <em><strong>new_cost</strong></em> = cost_so_far(current) + cost to next node</li>
+<li>If <em><strong>neighbors</strong></em> is not in <em><strong>cost_so_far</strong></em> OR new_cost &lt; cost_so_far(next)
+<ol>
+<li>cost_so_far[next]=<em><strong>new_cost</strong></em></li>
+<li>add <em><strong>neighbor</strong></em> and <em><strong>new_cost + heuristic cost</strong></em> to <em><strong>frontier</strong></em></li>
+<li>came_from[next]=current</li>
+</ol>
+</li>
+<li>end repeat</li>
+<li></li>
+</ol>
+<p>The complete code can be found <a href="git">here</a></p>
+<p>The result is shown below:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="A_star" srcset="
+               /post/astar/Astar_hu69b3007a94e4dfb9829c365aedede7ca_60027_ea84b04f5b0ba869d48b0b5a2c672bda.webp 400w,
+               /post/astar/Astar_hu69b3007a94e4dfb9829c365aedede7ca_60027_38c1739dfd5736faa97c0f93c28f216b.webp 760w,
+               /post/astar/Astar_hu69b3007a94e4dfb9829c365aedede7ca_60027_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/post/astar/Astar_hu69b3007a94e4dfb9829c365aedede7ca_60027_ea84b04f5b0ba869d48b0b5a2c672bda.webp"
+               width="760"
+               height="481"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+compare to Dijkstra, the A* do not explore the nodes that not in the goal directions (e.g. node 9).</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#breadth-first-search">Breadth first</a></td>
+<td>explore all the direction uniformly</td>
+<td>waste time</td>
+</tr>
+<tr>
+<td><a href="#dijkstras-algorithm">Dijkstra&rsquo;s</a></td>
+<td>consider edge cost, explore all directions</td>
+<td>waste time</td>
+</tr>
+<tr>
+<td><a href="#heuristic-search-greedy-best-first-search">Heuristic</a></td>
+<td>explore goal direction</td>
+<td>may not find the shortest way</td>
+</tr>
+<tr>
+<td><a href="#a-algorithm">A*</a></td>
+<td>explore goal direction, consider cost</td>
+<td>relay on estimate cost</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>A* is good, but it relay on the estimate cost from current node to goal nodes. If estimate cost is larger than real cost, it may not return the shortest path.</li>
+<li>When the estimate cost become smaller, A* turn into Dijkstra&rsquo;s: No direction is shown. When the estimate cost become larger, A* turn into Heuristic: estimate cost become dominate and the influence of real costs are too small, it does not influence the path searching process.</li>
+<li>Cost value and heuristic value can be vary in different circumstance. How to define and calculate them may difficult.</li>
+</ol>
 <h2 id="reference">Reference</h2>
 <ol>
 <li>“A* Search Algorithm.” In Wikipedia, April 6, 2024. <a href="https://en.wikipedia.org/w/index.php?title=A" target="_blank" rel="noopener">https://en.wikipedia.org/w/index.php?title=A</a>*_search_algorithm&amp;oldid=1217507422.</li>
-<li>Patel, Amit J. “Introduction to the A* Algorithm.” Red Blob Games, 2014. <a href="https://www.redblobgames.com/a-star/introduction.html" target="_blank" rel="noopener">https://www.redblobgames.com/a-star/introduction.html</a>.</li>
+<li>Patel, Amit J. “Introduction to the A* Algorithm.” Red Blob Games, 2014. <a href="https://www.redblobgames.com/pathfinding/a-star/introduction.html" target="_blank" rel="noopener">https://www.redblobgames.com/pathfinding/a-star/introduction.html</a>.</li>
 </ol>
 
               </div>
